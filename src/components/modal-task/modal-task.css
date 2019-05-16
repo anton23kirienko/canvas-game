@@ -1,0 +1,44 @@
+.modal-task {
+  position: absolute;
+  top: -400px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  min-width: 420px;
+  padding: 20px;
+  color: rgb(187, 187, 187);
+  background-color: rgb(16, 16, 16);
+  transform: translateX(-50%);
+  transition: top 0.4s ease-out;
+}
+
+.modal-task .form {
+  position: static;
+  transform: translateX(0);
+}
+
+.modal-task--transitioned { top: 90px; }
+
+.draggable-list {
+  display: flex;
+  height: 48px;
+}
+
+.draggable-list_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgb(187, 187, 187);
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+.draggable-list_item:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(187, 187, 187);
+}

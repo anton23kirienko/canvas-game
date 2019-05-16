@@ -1,0 +1,38 @@
+<section class="interface">
+  <article class="menu-wrapper">
+    <div class="menu-container">
+      <div class="menu-container_canvas-wrapper">
+        <canvas class="canvas-player" id="interfacePlayerLogo" width="120" height="120"></canvas>
+      </div>
+      <div class="menu-container_wrapper">
+        <div class="menu-container_hpbar">
+          <div class="player-health" id="interfacePlayerHealth"></div>
+        </div>
+        <span id="interfacePlayerName"></span>
+      </div>
+    </div>
+    <div class="menu-score">
+      <span id="interfaceScore">0</span>
+    </div>
+    <div class="menu-container">
+      <div class="menu-container_wrapper menu-container_wrapper--right">
+        <div class="menu-container_hpbar">
+          <div class="enemy-health" id="interfaceEnemyHealth"></div>
+        </div>
+        <span id="interfaceEnemyName"></span>
+      </div>
+      <div class="menu-container_canvas-wrapper">
+        <canvas class="canvas-enemy" id="interfaceEnemyLogo" width="120" height="120"></canvas>
+      </div>
+    </div>
+  </article>
+  <article class="control">
+    <button class="menu_button" id="interfaceControlMath" tabindex="0">Math</button>
+    <button class="menu_button" id="interfaceControlTranslate" tabindex="0">translate</button>
+    <button class="menu_button" id="interfaceControlDrag" tabindex="0">drag&amp;drop</button>
+  </article>
+  <div class="canvas-container">
+    <canvas class="canvas" id="canvasBack" width="900" height="500"></canvas>
+    <canvas class="canvas" id="canvasFront" width="900" height="500"></canvas>
+  </div>
+</section>

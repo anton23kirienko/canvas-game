@@ -1,0 +1,29 @@
+.menu {
+  position: absolute;
+  top: -400px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+  height: 200px;
+  transform: translateX(-50%);
+  transition: top 0.4s ease-out;
+}
+
+.menu--transitioned { top: 120px; }
+
+.menu_button {
+  min-width: 90px;
+  padding: 6px 12px;
+  border: 3px solid rgb(187, 187, 187);
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu_button:hover,
+.menu_button:focus {
+  color: rgb(16, 16, 16);
+  background-color: rgb(187, 187, 187);
+}
